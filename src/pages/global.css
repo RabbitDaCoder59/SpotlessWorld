@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Home {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/home-cleaning-banner.jpg");
+  background-position: center left;
+  transition: background-image 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 1;
+  @apply w-full h-full lg:min-h-dvh bg-fixed bg-no-repeat bg-cover;
+}
+
+.Home::after {
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  z-index: -1;
+  @apply w-full h-full absolute top-0;
+}

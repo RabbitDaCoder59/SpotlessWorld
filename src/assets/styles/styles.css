@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav ul li {
+  @apply font-poppins text-white hover:text-blue uppercase font-semibold text-sm;
+}
+nav ul li .active {
+  @apply text-blue;
+}
+
+.button {
+  @apply capitalize w-36 h-11 text-white font-poppins text-lg font-medium  bg-blue;
+}
+
+.img {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2019/03/about-01-free-img.jpg");
+  background-position: center left;
+  transition: background-image 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 1;
+  @apply w-full relative h-150 bg-no-repeat bg-cover;
+}
+
+.img::after {
+  content: "";
+  background: #000;
+  opacity: 0.2;
+  z-index: -1;
+  @apply w-full h-150 absolute top-0;
+}
+
+.anim-Image img:hover {
+  transform: translateY(-20%);
+  transition: transform 2s cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+/* ==================== styles for Services background Images  =========================== */
+
+.cards {
+  background-position: center center;
+  z-index: 1;
+  @apply lg:w-80 lg:h-98 w-full h-82   flex flex-col justify-center items-center bg-no-repeat bg-cover  hover:bg-white relative;
+}
+
+.cards::after {
+  content: "";
+  z-index: -1;
+  @apply absolute lg:w-80 lg:h-98 w-full h-82  top-0 bg-blue opacity-70 hover:bg-white hover:opacity-40;
+}
+
+.card-one {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/hand-washing.jpg");
+}
+
+/* ----------------- */
+.card-two {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/cloth-iron.jpg  ");
+}
+
+/* ----------------- */
+
+.card-three {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/washing-machine.jpg");
+}
+
+/* ----------------- */
+
+.card-four {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/02/cleaning-services-clothes.jpg");
+}
+
+/* ----------------- */
+
+.card-five {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/window-cleaning.jpg");
+}
+
+/* ----------------- */
+
+.card-six {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/02/cleaning-services-gutter.jpg");
+}
+
+/* ----------------- */
+
+.card-seven {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/02/cleaning-services-roof.jpg");
+}
+
+/* ----------------- */
+
+.card-eight {
+  background-image: url("https://websitedemos.net/cleaning-services-04/wp-content/uploads/sites/347/2020/01/carpet-cleaning.jpg");
+}
+
+/* ----------------- */
+
+/* hamburger menu */
+
+.hamburgerMenu ul li {
+  @apply text-black font-poppins font-medium text-xl pb-12;
+}
+.hamburgerMenu ul li .active {
+  @apply text-white;
+}
